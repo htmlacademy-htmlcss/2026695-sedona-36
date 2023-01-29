@@ -15,7 +15,7 @@
 		<nav class="navigation">
 			<ul class="navigation-list">
 				<li class="navigation-list-item">
-					<a href="index.html" class="navigation-link">Главная</a>
+					<a href="index.html" class="navigation-link-current">Главная</a>
 				</li>
 				<li class="navigation-list-item">
 					<a href="index.html" class="navigation-link">О Седоне</a>
@@ -43,31 +43,42 @@
 		<h1 class="visually-hidden">Седона</h1>
 		<img class="main-slogan" src="#" alt="Добро на пожаловать в Седону">
 		<section class="main-section">
-			<h2 class="main-headind">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+			<h2 class="main-headind">Седона — небольшой городок в Аризоне,
+				заслуживающий большего!</h2>
 			<p class="main-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон</p>
 			<dl class="advantages-list">
-				<dt class="advantage-title">Настоящий городок</dt>
-				<dd class="advantage-description">
-						Седона - не аттракцион для туристов, там течёт своя жизнь
-				</dd>
-				<dt class="advantage-title">Небольшая площадь</dt>
-				<dd class="advantage-description">
-						Все достопримечательности находятся очень близко
-						<img class="background-advantages-image" src="#" alt="">
-				</dd>
-				<dt class="advantage-title">Красивая дорога</dt>
-				<dd class="advantage-description">
-						ехать в Седону из Лас-Вегаса совсем не скучно!
-				</dd>
-				<dt class="advantage-title">Мало туристов</dt>
-				<dd class="advantage-description">
-						Большинство едет в Гранд-Каньон и толпится там
-				</dd>
-				<dt class="advantage-title">Там есть мост дьявола</dt>
-				<dd class="advantage-description">
-						Да, по нему можно пройти! Если вы осмелитесь, разумеется
-						<img class="background-advantages-image" src="#" alt="">
-				</dd>
+				<div class="advantages-item">
+					<dt class="advantage-title">Настоящий городок</dt>
+					<dd class="advantage-description">
+							Седона - не аттракцион для туристов, там течёт своя жизнь
+					</dd>
+				</div>
+				<div class="advantages-item">
+					<dt class="advantage-title">Небольшая площадь</dt>
+					<dd class="advantage-description">
+							Все достопримечательности находятся очень близко
+							<img class="background-advantages-image" src="#" alt="">
+					</dd>
+				</div>
+				<div class="advantages-item">
+					<dt class="advantage-title">Красивая дорога</dt>
+					<dd class="advantage-description">
+							Ехать в Седону из Лас-Вегаса совсем не скучно!
+					</dd>
+				</div>
+				<div class="advantages-item">
+					<dt class="advantage-title">Мало туристов</dt>
+					<dd class="advantage-description">
+							Большинство едет в Гранд-Каньон и толпится там
+					</dd>
+				</div>
+				<div class="advantages-item">
+					<dt class="advantage-title">Там есть мост дьявола</dt>
+					<dd class="advantage-description">
+							Да, по нему можно пройти! Если вы осмелитесь, разумеется
+							<img class="background-advantages-image" src="#" alt="">
+					</dd>
+				</div>
 			</dl>
 			<h2 class="main-headind">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
 			<p class="main-text">Опытный персонал и качественное обслуживание!</p>
@@ -83,14 +94,14 @@
 			<p class="main-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<a class="hotel-search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
 		</section>
-		<footer class="main-footer">
-			<h2 class="main-footer-heading">Подпишитесь на рассылку</h2>
-			<p class="main-footer-text">Только полезная информация и никакого спама, честное бойскаутерское!</p>
-			<input class="email-field" type="email" name="email" placeholder="Ваш email">
-			<button class="email-button" type="button">Подписаться</button>
-		</footer>
+		<form class="mailing-form" method="post">
+			<h2 class="mailing-form-heading">Подпишитесь на рассылку</h2>
+			<p class="mailing-for-text">Только полезная информация и никакого спама, честное бойскаутерское!</p>
+			<input class="email-field" type="text" name="email" placeholder="Ваш email">
+			<input class="email-button" type="submit" value="Подписаться">
+		</form>
 	</main>
-	<footer>
+	<footer class="index-footer">
 		<ul class="contact-list">
 			<li class="contact-list-item">
 				<a class="contact-link" href="#">
@@ -108,7 +119,7 @@
 				</a>
 			</li>
 		</ul>
-		<p class="phone-number">+7(812)812-12-12</p>
+		<a href="tel:+78128121212">+7 (812) 812-12-12</a>
 		<a class="htmlacademy-link" href="https://htmlacademy.ru">
 			<span class="visually-hidden">html academy</span>
 		</a>
