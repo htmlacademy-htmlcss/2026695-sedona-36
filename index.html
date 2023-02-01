@@ -9,13 +9,13 @@
 
 <body>
 	<header class = "index-header">
-		<a href="index.html">
-			<img class = "logo" alt = "Логотип Седоны" src = "#">
+		<a href="index.html" aria-current="page">
+			<img class = "logo" alt = "Логотип Седоны" src = "images/logo.svg" width="140" height="70">
 		</a>
 		<nav class="navigation">
 			<ul class="navigation-list">
 				<li class="navigation-list-item">
-					<a href="index.html" class="navigation-link-current">Главная</a>
+					<a href="index.html" class="navigation-link" aria-current="page">Главная</a>
 				</li>
 				<li class="navigation-list-item">
 					<a href="index.html" class="navigation-link">О Седоне</a>
@@ -41,7 +41,7 @@
 	</header>
 	<main class="index-main">
 		<h1 class="visually-hidden">Седона</h1>
-		<img class="main-slogan" src="#" alt="Добро на пожаловать в Седону">
+		<img class="main-slogan" src="images/welcome.svg" alt="Добро на пожаловать в Седону" width="458" height="352">
 		<section class="main-section">
 			<h2 class="main-headind">Седона — небольшой городок в Аризоне,
 				заслуживающий большего!</h2>
@@ -51,13 +51,13 @@
 					<dt class="advantage-title">Настоящий городок</dt>
 					<dd class="advantage-description">
 							Седона - не аттракцион для туристов, там течёт своя жизнь
+							<img class="background-advantages-image" src="images/advantages/advantages-1.jpg" alt="Фото из Седоны" width="800" height="384">
 					</dd>
 				</div>
 				<div class="advantages-item">
 					<dt class="advantage-title">Небольшая площадь</dt>
 					<dd class="advantage-description">
 							Все достопримечательности находятся очень близко
-							<img class="background-advantages-image" src="#" alt="">
 					</dd>
 				</div>
 				<div class="advantages-item">
@@ -76,7 +76,7 @@
 					<dt class="advantage-title">Там есть мост дьявола</dt>
 					<dd class="advantage-description">
 							Да, по нему можно пройти! Если вы осмелитесь, разумеется
-							<img class="background-advantages-image" src="#" alt="">
+							<img class="background-advantages-image" src="images/advantages/advantages-2.jpg" alt="Мост Дьявола">
 					</dd>
 				</div>
 			</dl>
@@ -94,7 +94,7 @@
 			<p class="main-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<a class="hotel-search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
 		</section>
-		<form class="mailing-form" method="post">
+		<form class="mailing-form" method="post" action="https://echo.htmlacademy.ru">
 			<h2 class="mailing-form-heading">Подпишитесь на рассылку</h2>
 			<p class="mailing-for-text">Только полезная информация и никакого спама, честное бойскаутерское!</p>
 			<input class="email-field" type="text" name="email" placeholder="Ваш email">
