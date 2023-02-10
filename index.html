@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<header class = "index-header">
+	<header class = "index-header" data-test="header">
 		<a href="index.html" aria-current="page">
 			<img class = "logo" alt = "Логотип Седоны" src = "images/logo.svg" width="140" height="70">
 		</a>
@@ -40,39 +40,41 @@
 		</nav>
 	</header>
 	<main class="index-main">
-		<h1 class="visually-hidden">Седона</h1>
-		<img class="main-slogan" src="images/welcome.svg" alt="Добро на пожаловать в Седону" width="458" height="352">
-		<section class="main-section">
+		<div class="page-title" data-test="hero">
+			<h1 class="visually-hidden">Седона</h1>
+			<img class="main-slogan" src="images/welcome.svg" alt="Добро на пожаловать в Седону" width="458" height="352">
+		</div>
+		<section class="main-section"  data-test="advantages">
 			<h2 class="main-headind">Седона — небольшой городок в Аризоне,
 				заслуживающий большего!</h2>
 			<p class="main-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон</p>
 			<dl class="advantages-list">
-				<div class="advantages-item">
+				<div class="advantages-item advantages-item-blue">
 					<dt class="advantage-title">Настоящий городок</dt>
 					<dd class="advantage-description">
 							Седона - не аттракцион для туристов, там течёт своя жизнь
 							<img class="background-advantages-image" src="images/advantages/advantages-1.jpg" alt="Фото из Седоны" width="800" height="384">
 					</dd>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item advantages-item-blue-light">
 					<dt class="advantage-title">Небольшая площадь</dt>
 					<dd class="advantage-description">
 							Все достопримечательности находятся очень близко
 					</dd>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item advantages-item-blue-bright">
 					<dt class="advantage-title">Красивая дорога</dt>
 					<dd class="advantage-description">
 							Ехать в Седону из Лас-Вегаса совсем не скучно!
 					</dd>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item advantages-item-blue-light">
 					<dt class="advantage-title">Мало туристов</dt>
 					<dd class="advantage-description">
 							Большинство едет в Гранд-Каньон и толпится там
 					</dd>
 				</div>
-				<div class="advantages-item">
+				<div class="advantages-item advantages-item-blue">
 					<dt class="advantage-title">Там есть мост дьявола</dt>
 					<dd class="advantage-description">
 							Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -90,18 +92,20 @@
 				<dt class="condition-title">Сувениры</dt>
 				<dd class="condition-description">Не только китайского, но и настоящего местного производства!</dd>
 			</dl>
-			<h2 class="main-headind">Заинтересовались?</h2>
-			<p class="main-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-			<a class="hotel-search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
+			<div class="search" data-test="search">
+				<h2 class="main-headind">Заинтересовались?</h2>
+				<p class="main-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<a class="hotel-search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
+			</div>
 		</section>
-		<form class="mailing-form" method="post" action="https://echo.htmlacademy.ru">
+		<form class="mailing-form" method="post" action="https://echo.htmlacademy.ru" data-test="subscribe">
 			<h2 class="mailing-form-heading">Подпишитесь на рассылку</h2>
-			<p class="mailing-for-text">Только полезная информация и никакого спама, честное бойскаутерское!</p>
+			<p class="mailing-form-text">Только полезная информация и никакого спама, честное бойскаутерское!</p>
 			<input class="email-field" type="text" name="email" placeholder="Ваш email">
 			<input class="email-button" type="submit" value="Подписаться">
 		</form>
 	</main>
-	<footer class="index-footer">
+	<footer class="index-footer" data-test="footer">
 		<ul class="contact-list">
 			<li class="contact-list-item">
 				<a class="contact-link" href="#">
@@ -119,7 +123,7 @@
 				</a>
 			</li>
 		</ul>
-		<a href="tel:+78128121212">+7 (812) 812-12-12</a>
+		<a href="tel:+78128121212" class="phone-number">+7 (812) 812-12-12</a>
 		<a class="htmlacademy-link" href="https://htmlacademy.ru">
 			<span class="visually-hidden">html academy</span>
 		</a>

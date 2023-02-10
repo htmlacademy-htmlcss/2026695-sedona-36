@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<header class="index-header">
+	<header class="index-header" data-test="header">
 		<a href="index.html">
 			<img class="logo" alt="Логотип Седоны" src="images/logo.svg">
 		</a>
@@ -40,8 +40,8 @@
 		</nav>
 	</header>
 	<main class="inner-main">
-		<section class="product-filters">
-			<h1>Гостиницы Седоны</h1>
+		<section class="product-filters" data-test="filter">
+			<h1 class="inner-heading">Гостиницы Седоны</h1>
 			<ul class="breadcrumbs">
 				<li class="breadcrumbs-item">
 					<a class="breadcrumbs-link" href="index.html">
@@ -102,11 +102,11 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button class="button" type="submit">Применить</button>
+				<button class="button button-blue" type="submit">Применить</button>
 				<button class="button" type="reset">Сбросить</button>
 			</form>
 		</section>
-		<section class="products">
+		<section class="products" data-test="catalog">
 			<h2 class="visually-hidden">Гостиницы</h2>
 			<b class="filter-result">Найдено гостиниц:38</b>
 			<select class="select-control" aria-label="Сортировка">
@@ -184,7 +184,7 @@
 			<h2 class="visually-hidden">Пагинация</h2>
 			<ul class="pagination-list">
 				<li class="pagination-item">
-					<a class="pagination-link" aria-current="page">1</a>
+					<a class="pagination-link pagination-current" aria-current="page">1</a>
 				</li>
 				<li class="pagination-item">
 					<a class="pagination-link" href="#">2</a>
@@ -204,15 +204,15 @@
 			</ul>
 
 		</section>
-		<form class="mailing-form-catalog" method="post" action="https://echo.htmlacademy.ru">
+		<form class="mailing-form-catalog" method="post" action="https://echo.htmlacademy.ru" data-test="subscribe">
 			<h2 class="mailing-form-heading">Подпишитесь на рассылку</h2>
-			<p class="mailing-for-text">Только полезная информация и никакого спама, честное бойскаутерское!</p>
+			<p class="mailing-form-text">Только полезная информация и никакого спама, честное бойскаутерское!</p>
 			<input class="email-field" type="text" name="email" placeholder="Ваш email">
 			<input class="email-button" type="submit" value="Подписаться">
 		</form>
 
 	</main>
-	<footer class="index-footer">
+	<footer class="index-footer" data-test="footer">
 		<ul class="contact-list">
 			<li class="contact-list-item">
 				<a class="contact-link" href="#">
@@ -230,7 +230,7 @@
 				</a>
 			</li>
 		</ul>
-		<a href="tel:+78128121212">+7 (812) 812-12-12</a>
+		<a href="tel:+78128121212" class="phone-number">+7 (812) 812-12-12</a>
 		<a class="htmlacademy-link" href="https://htmlacademy.ru">
 			<span class="visually-hidden">html academy</span>
 		</a>
