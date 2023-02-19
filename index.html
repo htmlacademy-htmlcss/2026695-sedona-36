@@ -9,37 +9,39 @@
 
 <body>
 	<header class = "index-header" data-test="header">
-		<a href="index.html" aria-current="page">
-			<img class = "logo" alt = "Логотип Седоны" src = "images/logo.svg" width="140" height="70">
-		</a>
-		<nav class="navigation">
-			<ul class="navigation-list">
-				<li class="navigation-list-item">
-					<a href="index.html" class="navigation-link" aria-current="page">Главная</a>
-				</li>
-				<li class="navigation-list-item">
-					<a href="index.html" class="navigation-link">О Седоне</a>
-				</li>
-				<li class="navigation-list-item">
-					<a href="catalog.html" class="navigation-link">Гостиницы</a>
-				</li>
-			</ul>
-			<ul class="navigation-list navigation-user">
-				<li class="navigation-list-item">
-					<a href="#" class="navigation-link">
-						<span class="visually-hidden">Поиск</span>
-					</a>
-				</li>
-				<li class="navigation-list-item">
-					<a href="#" class="navigation-link">
-						<span class="visually-hidden">Понравившееся</span>
-					</a>
-				</li>
-			</ul>
-			<a href="#" class="hotel-search-link">Хочу сюда!</a>
-		</nav>
+		<div class="navigation-container">
+			<a href="index.html" aria-current="page">
+				<img class = "logo" alt = "Логотип Седоны" src = "images/logo.svg" width="140" height="70">
+			</a>
+			<nav class="navigation">
+				<ul class="navigation-list">
+					<li class="navigation-list-item">
+						<a href="index.html" class="navigation-link" aria-current="page">Главная</a>
+					</li>
+					<li class="navigation-list-item">
+						<a href="index.html" class="navigation-link">О Седоне</a>
+					</li>
+					<li class="navigation-list-item">
+						<a href="catalog.html" class="navigation-link">Гостиницы</a>
+					</li>
+				</ul>
+				<ul class="navigation-user">
+					<li class="navigation-list-item">
+						<a href="#" class="navigation-link">
+							<span class="visually-hidden">Поиск</span>
+						</a>
+					</li>
+					<li class="navigation-list-item">
+						<a href="#" class="navigation-link">
+							<span class="visually-hidden">Понравившееся</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="hotel-search-link">Хочу сюда!</a>
+			</nav>
+		</div>
 	</header>
-	<main class="index-main">
+	<main class="index-main main-container">
 		<div class="page-title" data-test="hero">
 			<h1 class="visually-hidden">Седона</h1>
 			<img class="main-slogan" src="images/welcome.svg" alt="Добро на пожаловать в Седону" width="458" height="352">
@@ -85,12 +87,18 @@
 			<h2 class="main-headind">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
 			<p class="main-text">Опытный персонал и качественное обслуживание!</p>
 			<dl class="condition-list">
-				<dt class="condition-title">Жильё</dt>
-				<dd class="condition-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
-				<dt class="condition-title">Еда</dt>
-				<dd class="condition-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</dd>
-				<dt class="condition-title">Сувениры</dt>
-				<dd class="condition-description">Не только китайского, но и настоящего местного производства!</dd>
+				<div class="condition-item condition-item-blue">
+					<dt class="condition-title">Жильё</dt>
+					<dd class="condition-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
+				</div>
+				<div class="condition-item">
+					<dt class="condition-title">Еда</dt>
+					<dd class="condition-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</dd>
+				</div>
+				<div class="condition-item condition-item-blue">
+					<dt class="condition-title">Сувениры</dt>
+					<dd class="condition-description">Не только китайского, но и настоящего местного производства!</dd>
+				</div>
 			</dl>
 			<div class="search" data-test="search">
 				<h2 class="main-headind">Заинтересовались?</h2>
