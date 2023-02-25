@@ -9,35 +9,37 @@
 
 <body>
 	<header class="index-header" data-test="header">
-		<a href="index.html">
-			<img class="logo" alt="Логотип Седоны" src="images/logo.svg">
-		</a>
-		<nav class="navigation">
-			<ul class="navigation-list">
-				<li class="navigation-list-item">
-					<a href="index.html" class="navigation-link">Главная</a>
-				</li>
-				<li class="navigation-list-item">
-					<a href="index.html" class="navigation-link" >О Седоне</a>
-				</li>
-				<li class="navigation-list-item">
-					<a href="catalog.html" class="navigation-link" aria-current="page">Гостиницы</a>
-				</li>
-			</ul>
-			<ul class="navigation-list navigation-user">
-				<li class="navigation-list-item">
-					<a href="#" class="navigation-link">
-						<span class="visually-hidden">Поиск</span>
-					</a>
-				</li>
-				<li class="navigation-list-item">
-					<a href="#" class="navigation-link">
-						<span class="visually-hidden">Понравившееся</span>
-					</a>
-				</li>
-			</ul>
-			<a href="#" class="hotel-search-link">Хочу сюда!</a>
-		</nav>
+		<div class="navigation-container">
+			<nav class="navigation">
+				<a href="index.html">
+					<img class="logo" alt="Логотип Седоны" src="images/logo.svg">
+				</a>
+				<ul class="navigation-list">
+					<li class="navigation-list-item">
+						<a href="index.html" class="navigation-link">Главная</a>
+					</li>
+					<li class="navigation-list-item">
+						<a href="index.html" class="navigation-link">О Седоне</a>
+					</li>
+					<li class="navigation-list-item">
+						<a href="catalog.html" class="navigation-link" aria-current="page">Гостиницы</a>
+					</li>
+				</ul>
+				<ul class="navigation-list navigation-user">
+					<li class="navigation-list-item">
+						<a href="#" class="navigation-link">
+							<span class="visually-hidden">Поиск</span>
+						</a>
+					</li>
+					<li class="navigation-list-item">
+						<a href="#" class="navigation-link">
+							<span class="visually-hidden">Понравившееся</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#" class="search-link">Хочу сюда!</a>
+			</nav>
+		</div>
 	</header>
 	<main class="inner-main">
 		<section class="product-filters" data-test="filter">
@@ -117,15 +119,23 @@
 					<option value="expensive">Сначала дорогие</option>
 					<option value="high-rating">Сначала с высоким рейтингом</option>
 				</select>
-				<a class="button button-selected" href="#">
-					<span class="visually-hidden">Показать ячейки</span>
-				</a>
-				<a class="button" href="#">
-					<span class="visually-hidden">Показать слайд-шоу</span>
-				</a>
-				<a class="button" href="#">
-					<span class="visually-hidden">Показать строки</span>
-				</a>
+				<ul class="showing-list">
+					<li class="showing-item">
+						<a class="showing-link" href="#">
+							<span class="visually-hidden">Показать ячейки</span>
+						</a>
+					</li>
+					<li class="showing-item">
+						<a class="showing-link" href="#">
+							<span class="visually-hidden">Показать слайд-шоу</span>
+						</a>
+					</li>
+					<li class="showing-item">
+						<a class="showing-link" href="#">
+							<span class="visually-hidden">Показать строки</span>
+						</a>
+					</li>
+				</ul>
 			</div>
 			<div class="products-container">
 				<div class="product-card">
