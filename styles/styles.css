@@ -69,7 +69,7 @@ body {
 }
 
 .page-title {
-	background-image: url("../images/index-background.jpg");
+	background-image: url("../images/index-hero-background.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	padding-top: 51px;
@@ -276,7 +276,7 @@ body {
 }
 
 .mailing-form {
-	background-image: url("../images/subscribe.jpg");
+	background-image: url("../images/subscribe-background.jpg");
 	padding: 96px 258px 104px 258px;
 	margin: 0;
 	background-size: 100% auto;
@@ -333,7 +333,7 @@ body {
 }
 
 .product-filters {
-	background-image: url("../images/filters.jpg");
+	background-image: url("../images/filters-background.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	color: #ffffff;

@@ -8,6 +8,7 @@ import { stacksvg } from "gulp-stacksvg";
 import svgo from "gulp-svgmin";
 import { htmlValidator } from "gulp-w3c-html-validator";
 import browser from "browser-sync";
+import libsquoosh from "gulp-libsquoosh";
 
 const { src, dest, watch, series, parallel } = gulp;
 
@@ -76,4 +77,10 @@ export function runDev (done) {
 		startServer,
 		watchFiles
 	)(done);
+}
+
+export function images () {
+	return src('images/**/*.{jpg,png}')
+		.pipe(libsquoosh())
+		.pipe(dest('images/'))
 }
